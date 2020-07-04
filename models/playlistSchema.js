@@ -9,6 +9,10 @@ let playlistSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "User",
     },
+    tracks: [{
+        type: Schema.Types.ObjectId,
+        ref: "Music"
+    }]
   },
   { timestamps: true }
 );
