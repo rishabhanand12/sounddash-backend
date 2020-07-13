@@ -21,8 +21,11 @@ var musicSchema = new Schema(
       type: String,
     },
     genre: {
-      type: "String",
+      type: String,
     },
+    album: {
+      type: String,
+    }
   },
   { timestamps: true }
 );

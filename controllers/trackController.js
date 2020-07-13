@@ -1,6 +1,6 @@
 let Track = require("../models/musicSchema");
 
-exports.getAllTracks = async (req, res, next) => {
+exports.getAllTracks = async (_req, res, next) => {
   try {
     let allTracks = await Track.find({});
     res.json({ allTracks });
@@ -8,3 +8,7 @@ exports.getAllTracks = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.getTrackByUser = async (req,res,next) => {
+  
+}

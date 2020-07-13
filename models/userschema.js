@@ -36,7 +36,20 @@ var userSchema = new Schema(
         ref: "Music",
       },
     ],
+    following: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    favoriteArtist: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
   },
+
   { timestamps: true }
 );
 

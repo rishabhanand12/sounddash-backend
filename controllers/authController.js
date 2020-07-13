@@ -34,7 +34,7 @@ exports.loginUser = async (req, res, next) => {
       res.json({ error: "Incorrect Password" });
     } else {
       let token = await jwt.sign(
-        { user: User.id },
+        { user: user.id },
         process.env.ACCESS_TOKEN_SECRET
       );
       user._doc.authToken = token;

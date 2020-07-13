@@ -4,4 +4,6 @@ let router = express.Router();
 
 router.post("/",trackController.getAllTracks);
 
+router.post("/:userId")
+
 module.exports = router;

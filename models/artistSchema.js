@@ -11,6 +11,12 @@ var artistSchema = new Schema(
         ref: "Music",
       },
     ],
+    albums: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Album",
+      },
+    ],
   },
   { timestamps: true }
 );
